@@ -9,7 +9,6 @@ export class CockpitComponent {
 @Output('srvcreated') Servercreated=new EventEmitter<{nameserver:string,servercontent:string}>();
 @Output('Blueprintcreated') Blueprintcreated=new EventEmitter<{nameserver:string,servercontent:string}>();
 @ViewChild('serverContentinput') serverContentinput: ElementRef;
-@Input() Mynum;
 
 onAddserver(servernameinput: HTMLInputElement){
   console.log(servernameinput.value);
